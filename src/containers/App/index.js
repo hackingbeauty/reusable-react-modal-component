@@ -28,7 +28,6 @@ export class App extends Component {
             </div>
           </HashRouter>
         </div>
-        <LeftNavBar />
       </div>
 
     )
