@@ -19,7 +19,7 @@ class Header extends Component {
         <Navbar>
           <Navbar.Header>
             <Navbar.Brand>
-              <a href="#home">Reusable Modal Component</a>
+              <a href="#home">Reusable React Modal Component</a>
             </Navbar.Brand>
           </Navbar.Header>
           <Nav>
