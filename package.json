@@ -1,7 +1,7 @@
 {
-  "name": "jimjam",
+  "name": "Reusable React Modal Component Tutorial",
   "version": "1.0.0",
-  "description": "A React/Redux Progressive Mobile Web App boilerplate",
+  "description": "A highly reusable and configurable Modal component for large-scale React apps. Leverages React Bootstrap. Learn more at www.singlepageapplication.com!",
   "scripts": {
     "clean": "rimraf dist",
     "build": "webpack --progress --verbose --colors --display-error-details --config webpack/common.config.js",
