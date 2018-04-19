@@ -2,9 +2,7 @@ import React, { Component }  from 'react'
 import {
   Navbar,
   Nav,
-  NavDropdown,
-  NavItem,
-  MenuItem
+  NavItem
 } from 'react-bootstrap'
 
 /* component styles */
@@ -34,6 +32,5 @@ class Header extends Component {
     )
   }
 }
-
 
 export default Header
