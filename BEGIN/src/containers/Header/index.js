@@ -24,7 +24,7 @@ class Header extends Component {
           </Navbar.Header>
           <Nav>
             <NavItem eventKey={1} href="http://singlepageapplication.com">
-              Get The Full Course!
+              Get The Course "How To Write A Single Page Application"!
             </NavItem>
           </Nav>
         </Navbar>
