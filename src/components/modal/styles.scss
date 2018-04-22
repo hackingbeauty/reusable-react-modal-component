@@ -1,0 +1,46 @@
+/***** <Modal> styles *****/
+:local(.modalStyles) {
+
+  .modal-content {
+    // background: $modal-background-color;
+    padding: 10px;
+  }
+
+}
+
+
+/***** <ModalHeader> styles ******/
+:local(.modalHeaderStyles) {
+  .modal-header {
+    border-bottom: none;
+
+    .modal-title {
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 0.6;
+      // color: $brand-primary;
+      font-family: Arial, sans-serif;
+    }
+  }
+}
+
+
+/***** <ModalBody> styles ******/
+:local(.modalBodyStyles) { }
+
+
+/***** <ModalFooter> styles ******/
+:local(.modalFooterStyles) {
+  .modal-footer {}
+
+  .cancel-btn {
+    text-align: left;
+    padding: 7px 0px 0px 0px;
+    float: left;
+  }
+
+  .custom-modal-footer-actions {
+    float: right;
+  }
+
+}

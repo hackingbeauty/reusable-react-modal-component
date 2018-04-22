@@ -1,3 +1,31 @@
 :local(.styles) {
+  
+}
 
+:local(.demoModal1Styles) {
+  .demo-modal-1 {
+    width: 1000px;
+  }
+}
+
+:local(.demoModal2Styles) {
+
+}
+
+:local(.demoModal3Styles) {
+  .demo-modal-3 {
+    input {
+      position: relative;
+      top: 8px;
+    }
+  }
+}
+
+:local(.demoModal4Styles) {
+  .demo-modal-4{
+    input {
+      position: relative;
+      top: 5px;
+    }
+  }
 }

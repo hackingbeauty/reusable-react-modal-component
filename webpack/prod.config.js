@@ -1,5 +1,5 @@
-const webpack = require('webpack');
-const path = require('path');
+const webpack           = require('webpack');
+const path              = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
@@ -8,7 +8,7 @@ module.exports = {
   entry: [],
 
   output: {
-    publicPath: '',
+    publicPath: ''
   },
 
   module: {
@@ -18,43 +18,43 @@ module.exports = {
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
           use: [
-          {
-            loader: 'css-loader'
-          },
-          {
-            loader: 'postcss-loader'
-          }, 
-          {
-            loader: 'sass-loader',
-            options: {
-              sourceMap: true,
-              data: '@import "variables";',
-              includePaths: [
-                path.join(__dirname, '..', '/src/containers/App/styles')
-              ]
+            {
+              loader: 'css-loader'
+            },
+            {
+              loader: 'postcss-loader'
+            },
+            {
+              loader: 'sass-loader',
+              options: {
+                sourceMap: true,
+                data: '@import "variables";',
+                includePaths: [
+                  path.join(__dirname, '..', '/src/containers/App/styles')
+                ]
+              }
             }
-          }
-        ]
+          ]
         })
       }
-    ],
+    ]
   },
 
   plugins: [
     new webpack.DefinePlugin({
       'process.env': {
-        NODE_ENV: '"production"',
+        NODE_ENV: '"production"'
       },
-      __DEVELOPMENT__: false,
+      __DEVELOPMENT__: false
     }),
     new ExtractTextPlugin({filename:'bundle.css'}),
     new webpack.optimize.UglifyJsPlugin({
       compress: {
-        warnings: false,
-      },
+        warnings: false
+      }
     }),
     new HtmlWebpackPlugin({
-      template: 'src/index.html',
+      template: 'src/index.html'
     }),
     new HtmlWebpackPlugin({
       filename: 'manifest.json',
