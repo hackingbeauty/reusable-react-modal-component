@@ -38,7 +38,7 @@
     "space-infix-ops": 0,
     "comma-dangle": [2, "never"],
     "prop-types":[0,"never"],
-    "no-multi-spaces": [1, {
+    "no-multi-spaces": [2, {
       "exceptions": {
           "VariableDeclarator": true,
           "ImportDeclaration": true,
