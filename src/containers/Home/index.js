@@ -2,6 +2,7 @@ import React, { Component }   from 'react'
 import { connect }            from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { CodeShower }         from 'components'
+import coursePromo            from 'assets/course-promo.png'
 
 /* actions */
 import * as uiActionCreators  from 'core/actions/actions-ui'
@@ -37,53 +38,8 @@ class Home extends Component {
 
     return (
       <div className={styles}>
-        <CodeShower
-          setup={
-            <div>
-              <h4>Modal with custom width & standard footer</h4>
-              <input type="button" value="open modal 1" onClick={this.openModal} data-modal-key="modal-example-1" />
-            </div>
-          }
-
-          code={[
-            {
-              'type': 'JavaScript',
-              'code': `
-                this.props.openModal({modalKey: 'modal-example-1'}) // This is how you open a Modal
-
-                /* Matador openModal/closeModal dispatchers have been integrated */
-
-              `
-            },
-            {
-              'type': 'JavaScript',
-              'code': `
-                <Modal
-                  modalKey="modal-example-1"
-                  modalState={ui.Modal}
-                  className="demo-modal-1"
-                  closeDispatcher={actions.ui.closeModal}
-                  cssModule={demoModal1Styles}>
-                  <ModalHeader title="Modal 1 Header Title" />
-                  <ModalBody>
-                    Modal 1 body
-                  </ModalBody>
-                  <ModalFooter />
-                </Modal>
-              `
-            },
-            {
-              'type': 'CSS',
-              'code': `
-                :local(.demoModal1Styles) {
-                  .demo-modal-1 {
-                    width: 1000px;
-                  }
-                }
-              `
-            }
-          ]}
-        />
+        <br />
+        <h3>Demo</h3>
 
         <CodeShower
           setup={
@@ -176,6 +132,54 @@ class Home extends Component {
           ]}
         />
 
+        <CodeShower
+          setup={
+            <div>
+              <h4>Modal with custom width & standard footer</h4>
+              <input type="button" value="open modal 1" onClick={this.openModal} data-modal-key="modal-example-1" />
+            </div>
+          }
+
+          code={[
+            {
+              'type': 'JavaScript',
+              'code': `
+                this.props.openModal({modalKey: 'modal-example-1'}) // This is how you open a Modal
+
+                /* Matador openModal/closeModal dispatchers have been integrated */
+
+              `
+            },
+            {
+              'type': 'JavaScript',
+              'code': `
+                <Modal
+                  modalKey="modal-example-1"
+                  modalState={ui.Modal}
+                  className="demo-modal-1"
+                  closeDispatcher={actions.ui.closeModal}
+                  cssModule={demoModal1Styles}>
+                  <ModalHeader title="Modal 1 Header Title" />
+                  <ModalBody>
+                    Modal 1 body
+                  </ModalBody>
+                  <ModalFooter />
+                </Modal>
+              `
+            },
+            {
+              'type': 'CSS',
+              'code': `
+                :local(.demoModal1Styles) {
+                  .demo-modal-1 {
+                    width: 1000px;
+                  }
+                }
+              `
+            }
+          ]}
+        />
+
         <Modal
           modalKey="modal-example-1"
           modalState={ui.Modal}
@@ -214,6 +218,19 @@ class Home extends Component {
             <input type="button" value="Do Something" />
           </ModalFooter>
         </Modal>
+
+        <br />
+        <br />
+        <br />
+        <div>
+          <p>Get guidance on developing and architecting a professional React app by an industry expert.</p>
+          <p>Check out the course <a href="http://singlepageapplication.com">How To Write A Single Page Application!</a></p>
+          <br />
+          <a href="http://singlepageapplication.com">
+            <img width="300" className="center" src={coursePromo} alt="Promo for course 'How To Write A Single Page Application!'" />
+          </a>
+          <br />
+        </div>
 
       </div>
     )
