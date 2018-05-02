@@ -18,8 +18,7 @@ import {
 import {
   styles,
   demoModal1Styles,
-  demoModal3Styles,
-  demoModal4Styles
+  demoModal3Styles
 } from './styles.scss'
 
 class Home extends Component {
