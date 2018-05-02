@@ -1,0 +1,42 @@
+:local(.codeShowerStyles) {
+
+  .code {
+    margin: 40px 0px;
+
+    width: 100%;
+
+    .code-section {
+      margin: 20px 0px;
+      display: none;
+    }
+
+    &.show {
+      .code-section {
+        display: block;
+      }
+    }
+
+    .setup-container{
+      position: relative;
+      display:inline-block;
+      width: 100%;
+
+      .setup {
+        float: left;
+        width: 80%;
+      }
+
+      .show-code {
+        display: inline-block;
+        cursor: pointer;
+        margin-left: 20px;
+        text-decoration: underline;
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+      }
+
+    }
+
+  }
+}
