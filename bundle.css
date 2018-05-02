@@ -1,3 +1,7 @@
+.nXmHLrO4o7awIiNbdndfF h4 {
+  font-weight: bold;
+  margin-bottom: 20px; }
+
 .sygWzlpaSm4KNKNHx1FSM .demo-modal-1 {
   width: 1000px; }
 
@@ -30,6 +34,29 @@
 
 ._3P9EmQig58-NGxTsS36XJk .custom-modal-footer-actions {
   float: right; }
+._1S1hFEGS36J_v8npjdjbKH .code {
+  margin: 40px 0px;
+  width: 100%; }
+  ._1S1hFEGS36J_v8npjdjbKH .code .code-section {
+    margin: 20px 0px;
+    display: none; }
+  ._1S1hFEGS36J_v8npjdjbKH .code.show .code-section {
+    display: block; }
+  ._1S1hFEGS36J_v8npjdjbKH .code .setup-container {
+    position: relative;
+    display: inline-block;
+    width: 100%; }
+    ._1S1hFEGS36J_v8npjdjbKH .code .setup-container .setup {
+      float: left;
+      width: 80%; }
+    ._1S1hFEGS36J_v8npjdjbKH .code .setup-container .show-code {
+      display: inline-block;
+      cursor: pointer;
+      margin-left: 20px;
+      text-decoration: underline;
+      position: absolute;
+      right: 0px;
+      bottom: 0px; }
 @import url(//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900&subset=latin,cyrillic-ext);/* global styles */
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -484,6 +511,8 @@ body {
     display: inline-block;
     padding: 5px 10px;
     border-radius: 5px; }
+  body .center {
+    text-align: center; }
 
 @media (max-width: 1414px) {
   .container {
