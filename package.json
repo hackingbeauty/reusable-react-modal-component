@@ -1,18 +1,19 @@
 {
   "name": "Reusable_React_Modal_Component_Tutorial",
   "version": "1.0.0",
-  "description": "A highly reusable and configurable Modal component for large-scale React apps. Leverages React Bootstrap. Learn more at www.singlepageapplication.com!",
+  "description": "A highly reusable Modal component for large-scale React apps. Leverages React Bootstrap. Learn more at www.singlepageapplication.com!",
   "scripts": {
     "clean": "rimraf dist",
     "build": "webpack --progress --verbose --colors --display-error-details --config webpack/common.config.js",
     "build:production": "npm run clean && npm run build",
     "lint": "eslint src",
     "start": "cross-env NODE_ENV=development node bin/server.js",
-    "test": "bin/test.sh"
+    "test": "bin/test.sh",
+    "deploy": "npm run build:production && gh-pages -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/hackingbeauty/base-single-page-app-architecture.git"
+    "url": "https://github.com/hackingbeauty/reusable-react-modal-component.git"
   },
   "devDependencies": {
     "autoprefixer": "^6.6.1",
@@ -66,6 +67,7 @@
     "webpack-merge": "^0.7.3"
   },
   "dependencies": {
+    "gh-pages": "^1.1.0",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-bootstrap": "^0.32.1",
