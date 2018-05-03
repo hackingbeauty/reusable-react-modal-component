@@ -53,8 +53,6 @@ class Home extends Component {
               'type': 'JavaScript',
               'code': `
                 this.props.openModal({modalKey: 'modal-example-2'}) // This is how you open a Modal
-
-                /* Matador openModal/closeModal dispatchers have been integrated */
               `
             },
             {
@@ -92,8 +90,6 @@ class Home extends Component {
               'type': 'JavaScript',
               'code': `
                 this.props.openModal({modalKey: 'modal-example-3'}) // This is how you open a Modal
-
-                /* Matador openModal/closeModal dispatchers have been integrated */
               `
             },
             {
@@ -144,9 +140,6 @@ class Home extends Component {
               'type': 'JavaScript',
               'code': `
                 this.props.openModal({modalKey: 'modal-example-1'}) // This is how you open a Modal
-
-                /* Matador openModal/closeModal dispatchers have been integrated */
-
               `
             },
             {
