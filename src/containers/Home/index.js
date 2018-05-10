@@ -85,6 +85,19 @@ class Home extends Component {
           </ModalFooter>
         </Modal>
 
+        <br />
+        <br />
+        <br />
+        <div>
+          <p>Get guidance on developing and architecting a professional React app by an industry expert.</p>
+          <p>Check out the course <a href="http://singlepageapplication.com">How To Write A Single Page Application!</a></p>
+          <br />
+          <a href="http://singlepageapplication.com">
+            <img width="300" className="center" src={coursePromo} alt="Promo for course 'How To Write A Single Page Application!'" />
+          </a>
+          <br />
+        </div>
+
       </div>
     )
   }
