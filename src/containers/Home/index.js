@@ -88,7 +88,7 @@ class Home extends Component {
         <br />
         <br />
         <br />
-        <div>
+        <div className="spa-ad">
           <p>Get guidance on developing and architecting a professional React app by an industry expert.</p>
           <p>Check out the course <a href="http://singlepageapplication.com">How To Write A Single Page Application!</a></p>
           <br />

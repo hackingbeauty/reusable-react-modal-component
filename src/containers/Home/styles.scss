@@ -1,4 +1,12 @@
 :local(.styles) {
+  height: 90vh;
+  position: relative;
+
+  .spa-ad {
+    position: absolute;
+    bottom: 20px;
+  }
+
   h4 {
     font-weight: bold;
     margin-bottom: 20px;
