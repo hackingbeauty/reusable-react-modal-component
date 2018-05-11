@@ -1,6 +1,12 @@
-.nXmHLrO4o7awIiNbdndfF h4 {
-  font-weight: bold;
-  margin-bottom: 20px; }
+.nXmHLrO4o7awIiNbdndfF {
+  height: 90vh;
+  position: relative; }
+  .nXmHLrO4o7awIiNbdndfF .spa-ad {
+    position: absolute;
+    bottom: 20px; }
+  .nXmHLrO4o7awIiNbdndfF h4 {
+    font-weight: bold;
+    margin-bottom: 20px; }
 
 .sygWzlpaSm4KNKNHx1FSM .demo-modal-1 {
   width: 1000px; }
