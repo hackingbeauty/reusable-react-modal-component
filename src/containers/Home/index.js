@@ -48,7 +48,7 @@ class Home extends Component {
           modalKey="modal-example-3"
           modalState={ui.Modal}
           className="demo-modal-3"
-          closeDispatcher={actions.ui.closeModal}
+          closeAction={actions.ui.closeModal}
           cssModule={demoModal1Styles}>
           <ModalHeader title="Modal 3 Header Title" />
           <ModalBody>
@@ -59,7 +59,7 @@ class Home extends Component {
 
         <Modal
           modalKey="modal-example-2"
-          closeDispatcher={actions.ui.closeModal}
+          closeAction={actions.ui.closeModal}
           modalState={ui.Modal}>
           <ModalHeader title="Modal 2 Header Title" />
           <ModalBody>
@@ -72,7 +72,7 @@ class Home extends Component {
           modalKey="modal-example-1"
           modalState={ui.Modal}
           className="demo-modal-1"
-          closeDispatcher={actions.ui.closeModal}
+          closeAction={actions.ui.closeModal}
           cssModule={demoModal3Styles}>
           <ModalHeader title="Modal 1 Header Title" />
           <ModalBody>
