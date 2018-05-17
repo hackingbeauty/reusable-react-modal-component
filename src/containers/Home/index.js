@@ -1,8 +1,6 @@
 import React, { Component }   from 'react'
 import { connect }            from 'react-redux'
 import { bindActionCreators } from 'redux'
-import { CodeShower }         from 'components'
-import coursePromo            from 'assets/course-promo.png'
 
 /* actions */
 import * as uiActionCreators  from 'core/actions/actions-ui'
