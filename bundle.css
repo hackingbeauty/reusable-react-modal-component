@@ -32,6 +32,9 @@
     font-family: Arial, sans-serif; }
 
 /***** <ModalBody> styles ******/
+._3VKq5L0pFujWFB6tBkP78Y {
+  /* No styles for now */ }
+
 /***** <ModalFooter> styles ******/
 ._3P9EmQig58-NGxTsS36XJk .cancel-btn {
   text-align: left;
@@ -40,29 +43,6 @@
 
 ._3P9EmQig58-NGxTsS36XJk .custom-modal-footer-actions {
   float: right; }
-._1S1hFEGS36J_v8npjdjbKH .code {
-  margin: 40px 0px;
-  width: 100%; }
-  ._1S1hFEGS36J_v8npjdjbKH .code .code-section {
-    margin: 20px 0px;
-    display: none; }
-  ._1S1hFEGS36J_v8npjdjbKH .code.show .code-section {
-    display: block; }
-  ._1S1hFEGS36J_v8npjdjbKH .code .setup-container {
-    position: relative;
-    display: inline-block;
-    width: 100%; }
-    ._1S1hFEGS36J_v8npjdjbKH .code .setup-container .setup {
-      float: left;
-      width: 80%; }
-    ._1S1hFEGS36J_v8npjdjbKH .code .setup-container .show-code {
-      display: inline-block;
-      cursor: pointer;
-      margin-left: 20px;
-      text-decoration: underline;
-      position: absolute;
-      right: 0px;
-      bottom: 0px; }
 @import url(//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900&subset=latin,cyrillic-ext);/* global styles */
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
