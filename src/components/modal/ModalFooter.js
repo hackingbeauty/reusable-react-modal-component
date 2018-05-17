@@ -15,13 +15,10 @@ class ModalFooter extends Component {
 
   getContent=() =>{
     const { children } = this.props
-    const { showCancel } = this.context
-
-    const cancelBtn = (<div onClick={this.onCancel} className="cancel-btn btn btn-link">Cancel</div>)
 
     return (
       <div>
-        {showCancel && cancelBtn}
+        <div onClick={this.onCancel} className="cancel-btn btn btn-link">Cancel</div>
         <div className="custom-modal-footer-actions">{children}</div>
       </div>
     )
@@ -45,8 +42,7 @@ ModalFooter.propTypes = {
 }
 
 ModalFooter.contextTypes = {
-  handleClose: PropTypes.func.isRequired,
-  showCancel: PropTypes.bool
+  handleClose: PropTypes.func.isRequired
 }
 
 export default ModalFooter

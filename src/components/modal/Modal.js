@@ -6,16 +6,13 @@ import { Modal as ReactBootstrapModal } from 'react-bootstrap'
 class Modal extends Component {
   constructor(props) {
     super(props)
-    this.state = {
-      show: false
-    }
+    this.state = { show: false }
   }
 
   getChildContext() {
-    const { modalKey, showCancel } = this.props
+    const { modalKey} = this.props
     return {
       modalKey,
-      showCancel,
       handleClose: this.handleClose
     }
   }
@@ -47,8 +44,8 @@ class Modal extends Component {
   }
 
   handleClose=() => {
-    const { closeDispatcher, modalKey } = this.props
-    closeDispatcher({modalKey})
+    const { closeAction, modalKey } = this.props
+    closeAction({modalKey})
   }
 }
 
@@ -56,23 +53,17 @@ Modal.propTypes = {
   children: PropTypes.node.isRequired,
   className: PropTypes.string,
   cssModule: PropTypes.string,
-  closeDispatcher: PropTypes.func.isRequired,
+  closeAction: PropTypes.func.isRequired,
   modalKey: PropTypes.string.isRequired,
   modalState: PropTypes.shape({
     showModal: PropTypes.bool,
     modalKey: PropTypes.string
-  }).isRequired,
-  showCancel: PropTypes.bool
-}
-
-Modal.defaultProps = {
-  showCancel: true
+  }).isRequired
 }
 
 Modal.childContextTypes = {
   handleClose: PropTypes.func,
-  modalKey: PropTypes.string,
-  showCancel: PropTypes.bool
+  modalKey: PropTypes.string
 }
 
 export default Modal
