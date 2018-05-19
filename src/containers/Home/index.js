@@ -74,9 +74,7 @@ class Home extends Component {
           <ModalBody>
             Modal 2 body
           </ModalBody>
-          <ModalFooter>
-            <input type="button" value="Do Something" />
-          </ModalFooter>
+          <ModalFooter />
         </Modal>
 
         <Modal
@@ -86,7 +84,7 @@ class Home extends Component {
           closeAction={actions.ui.closeModal}
           cssModule={demoModal3Styles}>
           <ModalHeader title="Modal 3 Header Title">
-            <i className="x-icon">X</i>
+            <a href="#"><span className="close"></span></a>
           </ModalHeader>
           <ModalBody>
             Modal 3 body
@@ -105,7 +103,7 @@ class Home extends Component {
             Modal 4 body
           </ModalBody>
           <ModalFooter>
-            <input type="button" value="Do Something" />
+            <input type="button" value="Do Something" onTouchTap={() => alert('Do something!')} />
           </ModalFooter>
         </Modal>
       </div>
