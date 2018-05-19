@@ -12,10 +12,8 @@ import {
   ModalFooter
 } from 'components/modal'
 
-
 import {
   styles,
-  demoModal1Styles,
   demoModal3Styles
 } from './styles.scss'
 
