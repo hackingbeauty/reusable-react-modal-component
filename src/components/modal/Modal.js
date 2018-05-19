@@ -6,7 +6,9 @@ import { Modal as ReactBootstrapModal } from 'react-bootstrap'
 class Modal extends Component {
   constructor(props) {
     super(props)
-    this.state = { show: false }
+    this.state = {
+      show: false
+    }
   }
 
   getChildContext() {
@@ -17,13 +19,13 @@ class Modal extends Component {
     }
   }
 
-  componentWillReceiveProps(nextProps) {
-    const modalInstance = nextProps.modalState
+  static getDerivedStateFromProps(nextProps) {
+    const { modalKey, modalState } = nextProps
 
-    if (modalInstance && (modalInstance.modalKey === this.props.modalKey)) {
-      this.setState({
-        show: modalInstance.showModal
-      })
+    if (modalKey === modalState.modalKey) {
+      return {
+        show: modalState.showModal
+      }
     }
   }
 

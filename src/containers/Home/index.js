@@ -36,37 +36,10 @@ class Home extends Component {
     return (
       <div className={styles}>
         <br />
-
         <input type="button" value="open modal 1" onClick={this.openModal} data-modal-key="modal-example-1" />
-                <br />
         <br />
-
+        <br />
         <input type="button" value="open modal 2" onClick={this.openModal} data-modal-key="modal-example-2" />
-
-
-        <Modal
-          modalKey="modal-example-3"
-          modalState={ui.Modal}
-          className="demo-modal-3"
-          closeAction={actions.ui.closeModal}
-          cssModule={demoModal1Styles}>
-          <ModalHeader title="Modal 3 Header Title" />
-          <ModalBody>
-            Modal 3 body
-          </ModalBody>
-          <ModalFooter />
-        </Modal>
-
-        <Modal
-          modalKey="modal-example-2"
-          closeAction={actions.ui.closeModal}
-          modalState={ui.Modal}>
-          <ModalHeader title="Modal 2 Header Title" />
-          <ModalBody>
-            Modal 2 body
-          </ModalBody>
-          <ModalFooter/>
-        </Modal>
 
         <Modal
           modalKey="modal-example-1"
@@ -81,6 +54,17 @@ class Home extends Component {
           <ModalFooter>
             <input type="button" value="Do Something" />
           </ModalFooter>
+        </Modal>
+
+        <Modal
+          modalKey="modal-example-2"
+          closeAction={actions.ui.closeModal}
+          modalState={ui.Modal}>
+          <ModalHeader title="Modal 2 Header Title" />
+          <ModalBody>
+            Modal 2 body
+          </ModalBody>
+          <ModalFooter/>
         </Modal>
 
       </div>
