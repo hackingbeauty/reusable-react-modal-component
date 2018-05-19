@@ -23,9 +23,7 @@ class Modal extends Component {
     const { modalKey, modalState } = nextProps
 
     if (modalKey === modalState.modalKey) {
-      return {
-        show: modalState.showModal
-      }
+      return { show: modalState.showModal }
     }
 
     return { show: false }
