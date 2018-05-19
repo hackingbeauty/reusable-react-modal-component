@@ -27,6 +27,8 @@ class Modal extends Component {
         show: modalState.showModal
       }
     }
+
+    return { show: false }
   }
 
   render() {
