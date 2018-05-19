@@ -14,7 +14,9 @@ import {
 
 import {
   styles,
-  demoModal3Styles
+  demoModal2Styles,
+  demoModal3Styles,
+  demoModal4Styles
 } from './styles.scss'
 
 class Home extends Component {
@@ -33,21 +35,44 @@ class Home extends Component {
 
     return (
       <div className={styles}>
-        <br />
-        <input type="button" value="open modal 1" onClick={this.openModal} data-modal-key="modal-example-1" />
-        <br />
-        <br />
-        <input type="button" value="open modal 2" onClick={this.openModal} data-modal-key="modal-example-2" />
+        <div className="section">
+          <h3>Standard Modal</h3>
+          <input type="button" value="open modal 1" onClick={this.openModal} data-modal-key="modal-example-1" />
+        </div>
+        <div className="section">
+          <h3>Modal with customized width</h3>
+          <input type="button" value="open modal 2" onClick={this.openModal} data-modal-key="modal-example-2" />
+        </div>
+        <div className="section">
+          <h3>Modal with customized header</h3>
+          <input type="button" value="open modal 3" onClick={this.openModal} data-modal-key="modal-example-3" />
+        </div>
+
+        <div className="section">
+          <h3>Modal with customized footer</h3>
+          <input type="button" value="open modal 4" onClick={this.openModal} data-modal-key="modal-example-4" />
+        </div>
 
         <Modal
           modalKey="modal-example-1"
-          modalState={ui.Modal}
-          className="demo-modal-1"
           closeAction={actions.ui.closeModal}
-          cssModule={demoModal3Styles}>
+          modalState={ui.Modal}>
           <ModalHeader title="Modal 1 Header Title" />
           <ModalBody>
             Modal 1 body
+          </ModalBody>
+          <ModalFooter/>
+        </Modal>
+
+        <Modal
+          modalKey="modal-example-2"
+          modalState={ui.Modal}
+          className="demo-modal-2"
+          closeAction={actions.ui.closeModal}
+          cssModule={demoModal2Styles}>
+          <ModalHeader title="Modal 2 Header Title" />
+          <ModalBody>
+            Modal 2 body
           </ModalBody>
           <ModalFooter>
             <input type="button" value="Do Something" />
@@ -55,16 +80,34 @@ class Home extends Component {
         </Modal>
 
         <Modal
-          modalKey="modal-example-2"
+          modalKey="modal-example-3"
+          modalState={ui.Modal}
+          className="demo-modal-3"
           closeAction={actions.ui.closeModal}
-          modalState={ui.Modal}>
-          <ModalHeader title="Modal 2 Header Title" />
+          cssModule={demoModal3Styles}>
+          <ModalHeader title="Modal 3 Header Title">
+            <i className="x-icon">X</i>
+          </ModalHeader>
           <ModalBody>
-            Modal 2 body
+            Modal 3 body
           </ModalBody>
-          <ModalFooter/>
+          <ModalFooter />
         </Modal>
 
+        <Modal
+          modalKey="modal-example-4"
+          modalState={ui.Modal}
+          className="demo-modal-4"
+          closeAction={actions.ui.closeModal}
+          cssModule={demoModal4Styles}>
+          <ModalHeader title="Modal 4 Header Title"/>
+          <ModalBody>
+            Modal 4 body
+          </ModalBody>
+          <ModalFooter>
+            <input type="button" value="Do Something" />
+          </ModalFooter>
+        </Modal>
       </div>
     )
   }

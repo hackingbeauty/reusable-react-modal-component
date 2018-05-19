@@ -2,15 +2,19 @@
   height: 90vh;
   position: relative;
 
+  .section {
+    margin-bottom: 20px;
+
+    input {
+      margin-top: 20px;
+    }
+  }
+
   .spa-ad {
     position: absolute;
     bottom: 20px;
   }
 
-  h4 {
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
 }
 
 :local(.demoModal1Styles) {
@@ -20,7 +24,9 @@
 }
 
 :local(.demoModal2Styles) {
-
+  .demo-modal-2 {
+    width: 1000px;
+  }
 }
 
 :local(.demoModal3Styles) {
