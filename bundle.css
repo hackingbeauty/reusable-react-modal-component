@@ -518,7 +518,8 @@ body {
   body fieldset {
     border: none; }
   body .container {
-    width: 1350px; }
+    width: 1350px;
+    margin-top: 80px; }
   body .error {
     color: #a94442;
     background-color: #f2dede;
